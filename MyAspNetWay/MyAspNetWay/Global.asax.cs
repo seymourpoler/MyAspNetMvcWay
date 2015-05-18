@@ -24,8 +24,8 @@ namespace MyAspNetWay
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             ViewEngines.Engines.Clear();
-            ViewEngines.Engines.Add(new CustomViewEngine());
-            //ViewEngines.Engines.Insert(0, new CustomViewEngine());
+//            ViewEngines.Engines.Add(new CustomViewEngine());
+            ViewEngines.Engines.Add(new CustomVirtualPathProviderViewEngine());
         }
     }
 }
