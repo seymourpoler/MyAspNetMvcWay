@@ -12,7 +12,6 @@ namespace MyAspNetWay
                     "~{1}/Views/{0}",
                     "{1}/Views/{0}"
                 };
-
         }
 
         protected override IView CreatePartialView (ControllerContext controllerContext, string partialPath)

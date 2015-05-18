@@ -128,7 +128,6 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="CustomControllerFactory.cs" />
     <Compile Include="CustomView.cs" />
-    <Compile Include="CustomViewEngine.cs" />
     <Compile Include="CustomVirtualPathProviderViewEngine.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
