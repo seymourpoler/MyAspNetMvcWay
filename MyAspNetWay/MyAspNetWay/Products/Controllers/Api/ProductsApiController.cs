@@ -3,7 +3,7 @@ using System.Net.Http;
 using System.Web.Http;
 using MyAspNetWay.Products.Models;
 
-namespace MyAspNetWay.Products.Controllers
+namespace MyAspNetWay.Products.Controllers.Api
 {
     public class ProductsApiController : ApiController
     {

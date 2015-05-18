@@ -132,6 +132,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Products\Controllers\Api\ProductsApiController.cs" />
     <Compile Include="Products\Controllers\ProductsController.cs" />
     <Compile Include="Products\Models\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -226,6 +227,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
+    <Folder Include="Products\Scripts\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
