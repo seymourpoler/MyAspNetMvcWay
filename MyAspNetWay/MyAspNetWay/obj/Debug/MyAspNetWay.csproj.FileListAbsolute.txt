@@ -60,3 +60,5 @@ D:\Documents\code\Github\MyAspNetMvcWay\MyAspNetMvcWay\MyAspNetWay\MyAspNetWay\b
 D:\Documents\code\Github\MyAspNetMvcWay\MyAspNetMvcWay\MyAspNetWay\MyAspNetWay\obj\Debug\MyAspNetWay.csprojResolveAssemblyReference.cache
 D:\Documents\code\Github\MyAspNetMvcWay\MyAspNetMvcWay\MyAspNetWay\MyAspNetWay\obj\Debug\MyAspNetWay.dll
 D:\Documents\code\Github\MyAspNetMvcWay\MyAspNetMvcWay\MyAspNetWay\MyAspNetWay\obj\Debug\MyAspNetWay.pdb
+D:\Documents\code\Github\MyAspNetMvcWay\MyAspNetMvcWay\MyAspNetWay\MyAspNetWay\bin\Domain.dll
+D:\Documents\code\Github\MyAspNetMvcWay\MyAspNetMvcWay\MyAspNetWay\MyAspNetWay\bin\Domain.pdb

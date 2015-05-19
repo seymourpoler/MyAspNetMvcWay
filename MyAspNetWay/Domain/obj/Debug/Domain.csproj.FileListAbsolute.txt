@@ -1,0 +1,5 @@
+D:\Documents\code\Github\MyAspNetMvcWay\MyAspNetMvcWay\MyAspNetWay\Domain\bin\Debug\Domain.dll
+D:\Documents\code\Github\MyAspNetMvcWay\MyAspNetMvcWay\MyAspNetWay\Domain\bin\Debug\Domain.pdb
+D:\Documents\code\Github\MyAspNetMvcWay\MyAspNetMvcWay\MyAspNetWay\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+D:\Documents\code\Github\MyAspNetMvcWay\MyAspNetMvcWay\MyAspNetWay\Domain\obj\Debug\Domain.dll
+D:\Documents\code\Github\MyAspNetMvcWay\MyAspNetMvcWay\MyAspNetWay\Domain\obj\Debug\Domain.pdb
