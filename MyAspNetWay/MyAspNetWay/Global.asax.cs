@@ -23,7 +23,7 @@ namespace MyAspNetWay
             ViewEngines.Engines.Clear();
             ViewEngines.Engines.Add(new CustomVirtualPathProviderViewEngine());
 
-            GlobalConfiguration.Configuration.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("text/html"));
+            //GlobalConfiguration.Configuration.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("text/html"));
             //config.Formatters.JsonFormatter.MediaTypeMappings.Add(new QueryStringMapping("json", "true", "application/json"));
         }
     }
