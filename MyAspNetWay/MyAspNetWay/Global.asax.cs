@@ -1,5 +1,7 @@
-﻿using System.Net.Http.Headers;
+﻿using System.Net.Http.Formatting;
+using System.Net.Http.Headers;
 using System.Web.Http;
+using System.Web.Http.Dispatcher;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
@@ -23,8 +25,10 @@ namespace MyAspNetWay
             ViewEngines.Engines.Clear();
             ViewEngines.Engines.Add(new CustomVirtualPathProviderViewEngine());
 
-            //GlobalConfiguration.Configuration.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("text/html"));
-            //config.Formatters.JsonFormatter.MediaTypeMappings.Add(new QueryStringMapping("json", "true", "application/json"));
+            GlobalConfiguration.Configuration.Formatters.JsonFormatter.MediaTypeMappings.Add(new QueryStringMapping("json", "true", "application/json"));
+            GlobalConfiguration.Configuration.Services.Replace(typeof (IHttpControllerSelector),
+                                                               new CustomHttpControllerSelector(
+                                                                   GlobalConfiguration.Configuration));
         }
     }
 }
