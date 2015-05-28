@@ -1,5 +1,7 @@
 ﻿function Service() {
     this.all = function() {
-        return $.get("/api/Products/Get");
+        var tasks = $.get("/api/Products/Get");
+        console.log(tasks);
+        return tasks;
     };
 }
