@@ -1,15 +1,15 @@
-﻿using System;
+﻿using Domain.Modules.Products.Services;
+using MyAspNetWay.Products.Models;
+using System;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using Domain.Modules.Products.Services;
-using MyAspNetWay.Products.Models;
 
 namespace MyAspNetWay.Products.Controllers.Api
 {
     public class ProductsApiController : ApiController
     {
-        private ProductService productService;
+        private readonly ProductService productService;
 
         public ProductsApiController()
         {
@@ -27,6 +27,12 @@ namespace MyAspNetWay.Products.Controllers.Api
         public HttpResponseMessage Upate(Product product)
         {
             throw new NotImplementedException();
+        }
+
+        [HttpDelete]
+        public HttpResponseMessage Delete(Guid productId)
+        {
+            productService.Remove(productId);
         }
     }
 }

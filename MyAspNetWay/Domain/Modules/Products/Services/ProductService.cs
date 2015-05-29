@@ -21,5 +21,10 @@ namespace Domain.Modules.Products.Services
                         price: (decimal)145), 
                 };
         }
+
+        public void Remove(Guid productId)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

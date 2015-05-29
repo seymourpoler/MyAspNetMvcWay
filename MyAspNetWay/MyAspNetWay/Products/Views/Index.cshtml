@@ -1,13 +1,27 @@
 ﻿<!DOCTYPE html>
 <html>
+    <title> Simple module ASP.NET</title>
     <head>
         <script src="/Scripts/jquery-1.8.2.min.js" type="text/javascript"></script>
-        <script src="/Products/Scripts/productService.js" type="text/javascript"></script>
+        <script src="/Scripts/underscore.js" type="text/javascript"></script>
+        <script src="/Products/Scripts/Service.js" type="text/javascript"></script>
+        <script src="/Products/Scripts/View.js" type="text/javascript"></script>
         <title>My ASP.NET MVC Way</title>
     </head>
-<body>
-    <div>
-        Simple module ASP.NET
-    </div>
-</body>
+    <script>
+        $(document).ready(function () {
+            var service = new Service();
+            var productview = new View(service);
+            productview.loadProducts();
+        });
+    </script>
+    <body>
+        <div>
+            Simple module ASP.NET
+        </div>
+        <button id="btnAdd">Add</button>
+        <ul id="listOfTasks">
+            
+        </ul>
+    </body>
 </html>
