@@ -1,9 +1,7 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using Domain.Modules.Products.Services;
+﻿using Domain.Modules.Products.Services;
 using MyAspNetWay.Products.Models;
 using System;
-using System.Net;
+using System.Linq;
 using System.Net.Http;
 using System.Web.Http;
 
