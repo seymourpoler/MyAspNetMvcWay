@@ -6,11 +6,11 @@
     this.loadProducts = function() {
         var promiseResult = service.all();
         promiseResult.done(function (products) {
-            _.each(product, function (product) {
+            _.each(products, function (product) {
                 $("#listOfProducts")
-                .prepend('<div>' + task.title + ' ' + task.description +
-                            ' <a id=' + task.id + ' href=\'#\' class="remove_task">Remove</a>' +
-                            ' <a id=' + task.id + ' href=\'#\' class="update_task">Update</a>' +
+                .prepend('<div>' + product.id + ' ' + product.name +
+                            ' <a id=' + product.id + ' href=\'#\' class="remove_product">Remove</a>' +
+                            ' <a id=' + product.id + ' href=\'#\' class="update_product">Update</a>' +
                         '</div>');
             });
         });

@@ -1,4 +1,6 @@
-﻿using Domain.Modules.Products.Services;
+﻿using System.Collections.Generic;
+using System.Linq;
+using Domain.Modules.Products.Services;
 using MyAspNetWay.Products.Models;
 using System;
 using System.Net;
@@ -19,12 +21,14 @@ namespace MyAspNetWay.Products.Controllers.Api
         [HttpGet]
         public HttpResponseMessage Get()
         {
-            var products = productService.All();
-            return Request.CreateResponse(HttpStatusCode.OK, products);
+            var productsFound = productService
+                                        .All()
+                                        .Select(Map);
+            return  HttpResponseMessageBuilder.Build(productsFound);
         }
 
         [HttpPost]
-        public HttpResponseMessage Upate(Product product)
+        public HttpResponseMessage Upate(ProductResponse productResponse)
         {
             throw new NotImplementedException();
         }
@@ -33,6 +37,16 @@ namespace MyAspNetWay.Products.Controllers.Api
         public HttpResponseMessage Delete(Guid productId)
         {
             productService.Remove(productId);
+            return HttpResponseMessageBuilder.Build();
+        }
+
+        private ProductResponse Map(Domain.Modules.Products.Models.Product product)
+        {
+            return  new ProductResponse
+            {
+                id = product.Id,
+                name = product.Name
+            };
         }
     }
 }
